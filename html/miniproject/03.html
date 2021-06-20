@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h3>회원 가입 양식</h3>
+    <form method="POST">
+      <table>
+        <tr>
+          <td>- 아이디</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>- 비밀번호</td>
+          <td><input type="password"></td>
+        </tr>
+        <tr>
+          <td>- 비밀번호 확인</td>
+          <td><input type="password"></td>
+        </tr>
+        <tr>
+          <td>- 이름</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>- 성별</td>
+          <td>
+            <label><input type="radio" name="sex" value="female">여성</label>
+            <label><input type="radio" name="sex" value="male">남성</label>
+          </td>
+        </tr>
+        <tr>
+          <td>- 전화번호</td>
+          <td>
+            <select>
+              <option value="02">02</option>
+              <option value="032">032</option>
+              <option value="052">052</option>
+              <option value="010">010</option>
+              <option value="011">011</option>
+            </select> - 
+            <input type="tel" id="phone"> - <input type="tel" id="phone"></td>
+        </tr>
+        <tr>
+          <td>- 이메일</td>
+          <td>
+            <input type="email" id="mail"> @ 
+            <select>
+              <option value="select">선택</option>
+              <option value="naver">naver.com</option>
+              <option value="google">gmail.com</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>- 자기소개</td>
+          <td><textarea id="jagisogea" cols="50" rows="5"></textarea></td>
+        </tr>
+      </table>
+    </form>
+    
+  </body>
+</html>

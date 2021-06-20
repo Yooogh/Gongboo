@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>포토 갤러리</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #eee;
+        font-family: "돋움";
+        font-size: 12px;
+        color: #666;
+      }
+      li {
+        list-style-type: none;
+      }
+      .clear {
+        clear: both;
+      }
+      #logo {
+        font-size: 16px;
+        color: #3e2b23;
+        padding-top: 10px;
+        padding-left: 30px;
+        float: left;
+      }
+      #top_menu {
+        padding-top: 10px;
+        padding-right: 10px;
+        float: right;
+      }
+      #header {
+        width: 800px;
+        height: 40px;
+        background-color: #ddd;
+      }
+      #left {
+        width: 150px;
+        height: 600px;
+        background-color: #343333;
+        color: #e2e2e2;
+        float: left;
+      }
+      #left h2 {
+        font-weight: normal;
+        padding-top: 20px;
+        padding-left: 30px;
+      }
+      #left ul {
+        font-size: 14px;
+        padding: 10px 10px 5px 25px;
+      }
+      .submenu {
+        padding: 3px;
+      }
+      #right {
+        width: 650px;
+        height: 600px;
+        background-color: #252525;
+        display: inline-block;
+      }
+      #main_title {
+        width: 572px;
+        padding: 10px;
+        border: solid 5px #444;
+        margin-top: 24px;
+        margin-right: 24px;
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+      }
+      #main_img {
+        padding-top: 15px;
+        padding-left: 24px;
+      }
+      #thumnail {
+        padding-top: 30px;
+        padding-left: 70px;
+        
+      }
+      #move_left {
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 5px;
+      }
+      #photos {
+        margin-top: 3px;
+      }
+      #move_right {
+        margin-top: 20px;
+      }
+      a, #move_left, #move_right{
+        float: left;
+        text-align: center;
+        margin-left: 15px;
+      }
+      a img {
+        border: solid 5px #3d3d3d;
+      }
+      a img:hover {
+        border: solid 5px #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo">PHOTO GALLERY</div>
+      <div id="top_menu">로그인 | 회원가입 | 방명록</div>
+    </div>
+    <div id="left">
+      <h2>포토갤러리</h2>
+      <ul>
+        <li class="submenu">+ 풍경</li>
+        <li class="submenu">+ 일상</li>
+        <li class="submenu">+ 인물</li>
+        <li class="submenu">+ 가족</li>
+      </ul>
+    </div><!--end of left-->
+    <div id="right">
+      <div id="main_title">
+        풍경 사진
+      </div>
+      <img id="main_img" src="img/b-1.jpg">
+      <div id="thumnail">
+        <img id="move_left" src="img/bt_move_left.gif">
+        <ul id="photos">
+          <li><a href="#"><img src="img/s-1.jpg"></a></li>
+          <li><a href="#"><img src="img/s-2.jpg"></a></li>
+          <li><a href="#"><img src="img/s-3.jpg"></a></li>
+          <li><a href="#"><img src="img/s-4.jpg"></a></li>
+          <li><a href="#"><img src="img/s-5.jpg"></a></li>
+        </ul>
+        <img id="move_right" src="img/bt_move_right.gif">
+      </div>
+    </div><!--end of right-->
+  </body>
+</html>

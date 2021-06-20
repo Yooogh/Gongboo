@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style-type: none;
+      }
+      #header {
+        width: 800px;
+        height: 95px;
+        background-color: #2d3a4b;
+        position: relative;
+      }
+      #logo {
+        float: left;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+      }
+      #top_menu {
+        font-size: 11px;
+        color: #ffffff;
+        float: right;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
+      #main_menu {
+        font-size: 16px;
+        color: #ffffff;
+        overflow: hidden;
+        position: absolute;
+        top: 60px;
+        left: 190px;
+      }
+      #main_menu li{
+        float: left;
+        display: block;
+        margin-left: 35px;
+      }
+      #content li{
+        display: inline;
+      }
+      #footer {
+        width: 800px;
+        height: 90px;
+        margin-top: 20px;
+        background-color: #f1f1f1;
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo"><img src="img/logo.png"></div>
+      <div id="top_menu">HOME | NOTICE | LOGIN | JOIN</div>
+      <ul id="main_menu">
+        <li>COMPANY</li>
+        <li>PRODUCT</li>
+        <li>CUSTOMER</li>
+        <li>SERVICE</li>
+        <li>RECRUIT</li>
+      </ul>
+    </div>
+    <div id="content">
+      <img src="img/main_img.png">
+      <ul>
+        <li><img src="img/banner1.png"></il>
+        <li><img src="img/banner2.png"></il>
+      </ul>
+    </div>
+    <div id="footer">
+      <img src="img/address.png">
+    </div>
+  </body>
+</html>
