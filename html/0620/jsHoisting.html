@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>함수 호이스팅</h1>
+    <script>
+      var globalNum = 10;
+      function printNum() {
+        document.write("지역변수 globalNum 선언 전의 globalNum 값은 " + globalNum + "<br>");
+        var globalNum = 20;
+        document.write("지역변수 globalNum 선언 후의 globalNum 값은 " + globalNum + "<br>");
+      }
+      printNum();
+    </script>
+  </body>
+</html>
