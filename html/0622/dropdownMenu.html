@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .mainmenu, .submenu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .mainmenu > li {
+        float: left;
+        border: palegreen solid 1px;
+      }
+      .mainmenu > li > a{
+        display: block;
+        padding: 10px 25px;
+        text-align: center;
+      }
+      .submenu {
+        position: absolute;
+        background-color: peachpuff;
+        opacity: 0;
+        visibility: hidden;
+      }
+      .mainmenu > li:hover .submenu {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="gnb">
+       <ul class="mainmenu">
+          <li><a>Caffebene</a>
+           <ul class="submenu">
+             <li><a>브랜드 스토리</a></li>
+             <li><a>베네캣 스토리</a></li>
+            <li><a>카페베네 원두</a></li>
+             <li><a>카페베네 소식</a></li>
+           </ul>
+        </li>
+       </body>
+</html>

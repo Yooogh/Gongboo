@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a:link, a:visited {}
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a herf="#" onclick="alert('버튼을 클릭했습니다')">green</a></li>
+      <li><a herf="#" onclick="alert('버튼을 클릭했습니다')">orange</a></li>
+      <li><a herf="#" onclick="alert('버튼을 클릭했습니다')">purple</a></li>
+    </ul>
+    <div id="result"></div>
+
+    <script>
+      function changeBg(color) {
+        var result = document.querySelector('#result');
+        result.style.backgroundColor = color;
+      }
+    </script>
+  </body>
+</html>

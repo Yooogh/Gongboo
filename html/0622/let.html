@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function clacSum(n) {
+        let sum = 0; //재선언 안되는 고로 에러 발생
+        // sum = 0; //정상 작동
+        for (let i = 1; i < n + 1; i++) {
+          sum += i;
+        }
+      }
+      clacSum(10);
+      console.log(sum);
+    </script>
+  </body>
+</html>

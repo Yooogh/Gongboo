@@ -1,0 +1,17 @@
+<script>
+  //매개변수 없는 경우
+  const hi = function() {
+    return alert("안녕하세요");
+  }
+
+  const hi = () => {return alert("안녕하세요")};
+
+  const hi = () => alert("안녕하세요"); //한줄이면 브레이스 생략 가능
+
+  //매개변수 있는 경우
+  let hi = function(user) {
+    document.write(user + "님 안녕하세요");
+  }
+  
+  let hi = user => {document.write(user + "님 안녕하세요"); }
+</script>
