@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Window 객체</title>
+</head>
+<body>
+    <p>문서를 열면 팝업 창이 표시됩니다</p>
+    <script>
+      var height = screen.availHeight;
+      var width = screen.availWidth;
+      document.write("화면의 높이 : ", height, "<br>");
+      document.write("화면의 가로폭 : ", width, "<br>");
+      var t = (height - 400)/2; //위쪽 좌표
+      var left = (width - 500)/2; //왼쪽 좌표
+      var opt = "left=" + left + ",top=" + t + ",width=400,height=500";
+      document.write("상단위치 : ", t)
+      // window.open("notice.html", "pop", "left=200, top=100, width=500, height=400");
+      window.open("notice.html", "pop", opt);
+      //변수명 top하면 안되구 다른걸로 해야 top 값을 인식하는 듯?   
+    </script>
+    </script>
+</body>
+</html> 

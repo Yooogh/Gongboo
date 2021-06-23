@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head><title>forEach</title></head>
+  <body>
+
+    <script>
+      var kdata = ["서울", "부산", "청주", "대구"];
+      function printArr(item, index) {
+        document.write("배열 데이터 [" + index + "] : " + item + "<br>");
+      }
+      kdata.forEach(printArr);
+      </script>
+      <!-- 메소드의 인자로 다른 함수가 올 수 있다! -->
+
+    <script>
+      var data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      var sum = 0;
+      function addArr(value) {
+        sum += value;
+      }
+
+      // var.forData = data.forEach(addArr);
+      // document.write(forData);
+      // -> undefined 나옴 : forEach는 리턴값이 없음 void임!
+
+      data.forEach(addArr);
+      document.write("배열 데이터 합 : " + sum + "<p/>");
+    </script>
+
+  </body>
+</html>
