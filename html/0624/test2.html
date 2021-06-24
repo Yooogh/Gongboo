@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/test2.css">
+
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).on('mouseover', '.gnb span', function() {
+            $('.dept01').slideDown(300);
+        });
+        // $(document).on('mouseover', 'div', function () {
+        //     if (!$(this).hasClass('gnb')) {
+        //     $('.dept01').slideUp(300);
+        //     }
+        // });
+
+    </script>
+  </head>
+
+  <body>
+      <div id="wrap">
+        <header id="header" class="on">
+            <div class="static">
+                <h1 class="logo"><a>caffeBENE</a></h1>
+
+                <div class="gnb">
+                    <ul class="menu01">
+                        <li><span>Caffebene</span>
+                            <ul class="dept01">
+                                <li id="nop">브랜드 스토리</li>
+                                <li id="nop">베네캣 스토리</li>
+                                <li id="nop">카페베네 원두</li>
+                                <li id="nop">카페베네 소식</li>
+                                <!-- <li id="nop">sub05</li> -->
+                            </ul>
+                        </li>
+                        <li><span>Menu</span>
+                            <ul class="dept01">
+                                <li id="nop"><a href="신메뉴페이지">신메뉴</a></li>
+                                <li id="nop">커피</li>
+                                <li id="nop">음료</li>
+                                <li id="nop">디저트</li>
+                                <li id="nop">MD상품</li>
+                                <li id="nop">Retail</li>
+                            </ul>
+                        </li>
+                        <li><span>Store</span>
+                            <ul class="dept01">
+                                <li id="nop">국내</li>
+                                <li id="nop">해외</li>
+                            </ul>
+                        </li>
+                        <li><span>Mempership</span>
+                            <ul class="dept01">
+                                <li id="nop">등급&혜택</li>
+                                <li id="nop">가입방법안내</li>
+                                <li id="nop">서비스</li>
+                                <li id="nop">FAQ</li>
+                                <li id="nop">sub05</li>
+                            </ul>
+                        </li>
+                        <li><span>Global</span>
+                            <ul class="dept01">
+                                <li id="nop">해외매장안내</li>
+                                <li id="nop"><a href="해외사업소개페이지">해외사업소개</a></li>
+                                <li id="nop">해외가맹&유통문의</li>
+                                <li id="nop">sub04</li>
+                                <li id="nop">sub05</li>
+                            </ul>
+                        </li>
+                        <li><span>Contents</span>
+                            <ul class="dept01">
+                                <li id="nop">커피</li>
+                                <li id="nop">우리동네</li>
+                                <li id="nop">사람들</li>
+                                <li id="nop">메뉴</li>
+                                <li id="nop">이벤트</li>
+                                <li id="nop">매장</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+  <div class="none">
+  </div>
+  </body>
+</html>

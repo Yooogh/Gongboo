@@ -1,0 +1,35 @@
+<헤더>
+-로고
+-큰메뉴 - 속메뉴
+-언어 선택
+-가맹문의
+
+<메인>
+-신메뉴, 행사 배너
+  main-slider slick-initialized slick-slider slick-dotted
+-메뉴소개
+  static contents
+-기업 이미지 스토리 소개
+  hello-again
+-창업설명회, 인스타버튼
+  aside
+
+<푸터>
+-상단
+-하단
+* 사용자 편의를 위해서 어떻게 구성한 것 같고 어떤 면에서 좋은 것 같다
+
+메인 이미지 / 메뉴 -> 신메뉴 -> 신메뉴소개(상세)
+메뉴 -> 해외사업소
+
+
+
+2조 카페베네 홈페이지
+
+http://caffebene.com/
+
+header, footer, aside : 유경혜
+메인 본문 : 한영재
+MENU - 신메뉴 : 은명진
+MENU - 신메뉴 - 메뉴 상세 설명 : 최광준
+GLOBAL - 해외사업소개 : 김푸름

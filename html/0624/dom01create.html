@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function add() {
+        var header=document.createElement('h3');
+        var textNode=document.createTextNode('내 이름은 홍길동');
+        header.appendChild(textNode);
+        document.body.appendChild(header);
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#" onclick="add()">이름이 뭐야?</a>
+  </body>
+</html>

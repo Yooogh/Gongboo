@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Programming</title>
+	<link rel="stylesheet" href="css/nodelist.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Web Programming</h1>
+    <p>공부할 주제를 기록해 보세요</p>
+    <form action="">
+      <input type="text" id="subject" autofocus>
+      <button onclick="addLi(); return false;">추가</button>
+      <!-- 반환값을 false로 안해주면 원래 버튼의 기능(submit전달)만 되고 함수로 연결이 잘 안됨 -->
+    </form>
+    <hr>  
+    <ul id="itemList"></ul>  
+  </div>
+
+  <script>
+    function addLi() {
+      var newItem = document.createElement("li");
+      var subject = document.querySelector("#subject");
+      var liText = document.createTextNode(subject.value);
+      newItem.appendChild(liText);
+
+      var itemList = document.querySelector("#itemList"); //ul 태그 가져옴
+      // itemList.appendChild(newItem);//appendChile()는 뒤엑 가서 차례대로 붙음
+      itemList.insertBefore(newItem, itemList.childNodes[0]); //itemList의 자식노드의 0번째(첫번째) 요소 앞에 붙겠다
+      subject.value = "";
+    }
+  </script>
+</body>
+</html>
