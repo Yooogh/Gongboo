@@ -1,0 +1,6 @@
+$(document).ready(function(){
+$('.mainmenu .submenu').hide();
+$('.menutitle').mouseover(function(){
+  $('.submenu').slideDown() });
+$('.menutitle').mouseleave(function(){
+  $('.submenu').hide() });
