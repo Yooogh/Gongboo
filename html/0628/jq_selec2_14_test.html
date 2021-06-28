@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 탐색 선택자 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function(){
+ $("#inner_1").find(".txt1").css({"background-color" : "pink"})
+ //알아서 잘 찾아줌
+ $("#inner_1 p").filter(".txt2").css({"background-color" : "orange"})
+ //상위 요소만으로 할 수 없고하위의 p 태그를 가져와서 필터링 해야 함
+ $("#inner_2 p").filter(function(i, o) {
+	 //filter는 인자에 function도 올 수 있음. 콜백메서드
+	 console.log(i);
+	 return i % 2 ==0; //트루인 요소만 돌려줌
+ }).css({"background-color" : "yellowgreen"})
+});
+</script>
+</head>
+<body>
+	<div id="outer_wrap">
+		<h1>콘텐츠 탐색 선택자</h1>
+		<section id="inner_1">
+			<h2>find( ), filter( )</h2>
+			<p class="txt1">내용1</p>
+			<p class="txt2">내용2</p>
+		</section>
+		
+		<section id="inner_2">
+			<h2>filter(function)</h2>
+			<p>index 0</p>
+			<p>index 1</p>
+			<p>index 2</p>
+			<p>index 3</p>
+		</section>
+	</div>
+</body>
+</html>

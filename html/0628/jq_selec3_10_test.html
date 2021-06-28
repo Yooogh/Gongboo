@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 객체 조작 및 생성 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function( ){
+	$("<li>prependTo first</li>").prependTo("#listZone");
+	$("#listZone").prepend("<li>prepend</li>");
+	$("#listZone").append("<li>append</li>")
+	$("<li>appendTo</li>").appendTo("#listZone");
+	$("<li>prependTo last</li>").prependTo("#listZone");
+});
+</script>
+</head>
+<body>
+	<ul id="listZone">
+		<li>리스트</li>
+	</ul>
+</body>
+</html>

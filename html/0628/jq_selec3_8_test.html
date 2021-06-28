@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 객체 조작 및 생성 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function( ){
+	var topV = $("h1").offset().top; //상단으로부터의 위치값
+	$(window).scrollTop(topV); //문서 객체 자체window의  scrollTop 위치는 offset().top;
+
+	var sct = $(window).scrollTop();
+	console.log(sct); //결과값(scrollTop 값) 2000 -> padding-top 값과 일치
+
+});
+</script>
+<style>
+	*{margin:0;padding:0;}
+	body{line-height:1;}
+	#wrap{
+			height:5000px;
+			padding-top:2000px;
+	}
+</style>
+</head>
+<body>
+	<div id="wrap">
+			<h1>위치 메서드</h1>
+	</div>
+</body>
+</html>
