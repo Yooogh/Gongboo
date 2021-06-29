@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function( ) {
+   $(".btn1").click(function() {
+		 $(".btn1").parent().next().css( //p 요소의 부모 요소의 다음 요소
+			 {"color" : "red"});
+	 })
+   $(".btn2").on({
+		"mouseover focus" : function(){
+									$(".btn2").parent().next()
+									.css({"color" : "green" });
+									},
+		"mouseout blur" : function() {
+									$(".btn2").parent().next()
+									.css({"color":"black"});
+									}
+	 });
+	 $(".btn1").click(); //.btn1이 클릭된 상태가 됨
+	 $(".btn2").trigger("mouseover"); //trigger를 .btn2에 걸면 mousover된 것 처럼 됨
+	 $(".btn1").off("click"); //click 상태를 꺼둠 -> 반응 안 함
+	 $(".btn2").off("mouseover focus");
+
+});
+</script>
+</head>
+<body>
+	<p>
+	<button class="btn1">버튼1</button>
+	</p>
+	<p>내용1</p>
+	<p>
+		<button class="btn2">버튼2</button>
+	</p>
+	<p>내용2</p>
+</body>
+</html>

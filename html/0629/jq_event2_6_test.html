@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function(){
+	$(".btn_1").on("mouseover focus", function(){
+		alert("hello~");
+	});
+	$(".btn_1").addClass("on");
+
+	$(document).on("mouseover focus", ".btn_2.on", function(){
+		alert("welcom!!!");
+		//document에 이벤트 적용할 때는 (document).on("이벤트", "객체", 메서드()) 순서!
+	});
+	$(".btn_2").addClass("on"); //btn_2는 document에서 적용했기 때문에 나중에 지정해줘도 메서드가 잘 적용됨
+});
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<p><button class="btn_1">버튼1</button></p>
+		<p><button class="btn_2">버튼2</button></p>
+	</div>
+</body>
+</html>

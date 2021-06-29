@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+  <meta name="author" content="tailofmoon">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="style.css">	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+<form name="cal">
+  <table>
+    <caption>계산기</caption>
+    <tr>
+      <th colspan="4"><input type="text" name="result" value="0"></th>  
+    </tr>
+    <tr>
+      <td><input type="button" value="7"></td>
+      <td><input type="button" value="8"></td>
+      <td><input type="button" value="9"></td>
+      <td><input type="button" value="+"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="4"></td>
+      <td><input type="button" value="5"></td>
+      <td><input type="button" value="6"></td>
+      <td><input type="button" value="-"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="1"></td>
+      <td><input type="button" value="2"></td>
+      <td><input type="button" value="3"></td>
+      <td><input type="button" value="*"></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="button" value="0"></td>
+      <td><input type="button" value="%"></td>
+      <td><input type="button" value="/"></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="button" class="cls_btn" value="clear" ></td>
+      <td colspan="2"><input type="button" class="result_btn" value="=" ></td>    
+    </tr>
+  </table>
+</form>
+
+<script src="app.js"></script>
+<script>
+// //변수선언
+//   var inp = document.forms['cal'] //forms는 배열 형태로 저장
+//   var input = inp.getElementsByTagName('input');//버튼의 값 가져옴
+//   var cls_btn = inp.getElementsByClassName('cls_btn')[0]; //가져온 요소 중의 첫번째 요소
+//   var result_btn = inp.getElementsByClassName('result_btn')[0];
+
+// //계산기 초기화
+//   function clr(){
+//     inp['result'].value = 0;
+//   }
+
+// //입력 처리
+//   function calc(value){
+//     if(inp['result'].value == 0){
+//       inp['result'].value = ''; 
+//     }
+//     inp['result'].value += value;//문자열 연산할 때 누적 //입력값을 결과창에 출력
+//   }
+
+// //계산 결과 처리
+//   function my_result(){
+//     var result = document.forms['cal']['result'];
+//     var calc = eval(result.value);
+//     inp['result'].value = calc; //계산결과를 결과창에 출력
+//   }
+  
+// //이벤트 핸들러 (버튼에 대해서 이벤트 처리)
+//   cls_btn.onclick = function(){
+//     clr();
+//   }
+
+//   result_btn.onclick = function(){
+//     try{
+//       my_result();
+//     }catch(err) {
+//       var result = inp['result'];
+//       result.value
+//     }
+//   }
+
+
+//제이쿼리 버전
+  var inp = $('form[name=cal]');
+  var input = inp.find('input');
+  var cls_btn = $('.cls_btn');
+  var result_btn = $('.result_btn');
+  var result = inp.find('input[name=result]');
+
+  function clr(){ 
+    result.var(0);
+  }
+
+  function calc(value) {
+    if(result.val() == 0) {
+      result.val('');
+    }
+    var val = result.val() + value;
+    result.val(val);
+  }
+
+   function my_result(){
+    var calc = eval(result.val());
+    result.val(calc); //계산 결과를 결과창에 출력
+  }
+
+  $("input").click(function(){
+    var inValue = $(this).val();
+    if(inValue != 'clear' && inValue != '=') {
+      calc(inValue);
+    }
+  });
+  $(".cls_btn").click(function(){
+    clr();
+  });
+  $(".result_btn").click(function(){
+    try { 
+      my_result();
+    } catch(err){
+      result.val("입력오류");
+    }
+  });
+  
+</script>
+
+</body>
+
+
+</html>

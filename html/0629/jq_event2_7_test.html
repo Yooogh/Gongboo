@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function(){
+	//함수를 이벤트에 대해서 한번만 적용하게 함
+	//one은 나중에 실행되는 함수도 찾을 수 있는 반면
+	//delegate는 못 찾음
+	$(".btn_wrap").delegate(".btn_1.on", "mouseover focus", function() {
+		alert("hello!")
+	})//delegate라서 addClass("on")이 적용이 안돼서
+	$(".btn_1").addClass("on"); //나중에 추가해서 tap키로 포커스했을 때 창이 안 닫힘
+
+	$(document).one("mouseover focus", ".btn_2.on", function(){
+		//메소드 처리가 한 번만 일어나게
+		alert("welcom!!!");
+	});
+	$(".btn_2").addClass("on"); //btn_2는 document에서 적용했기 때문에 나중에 지정해줘도 메서드가 잘 적용됨
+});
+//focus에 대한 처리 -> 8번
+</script>
+</head>
+<body>
+<div id="wrap">
+	<p class="btn_wrap">
+		<button class="btn_1">버튼1</button>
+	</p>
+	<p><button class="btn_2">버튼2</button></p>
+</div>
+</body>
+</html>

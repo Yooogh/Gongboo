@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function( ) {
+	$(document).ready(function() {
+		var h1 = $(".img1").height();
+		console.log("ready : ", h1);
+	})
+	
+	//기본적으로 documnet.ready 상태에서 진행됨
+	//그치만 loadin한 다음 이미지 로딩하고 싶음
+	$(window).load(function(){
+		var h2 = $(".img1").height();
+		console.log("load : ", h2);
+	})
+});
+</script>
+</head>
+<body>
+	<p>
+		<img src="http://place-hold.it/300X300" class="img1">
+	</p>
+</body>
+</html>
