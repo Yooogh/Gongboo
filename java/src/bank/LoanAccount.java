@@ -1,5 +1,13 @@
-public class LoanAccount extends Account{
+package bank;
 
-//    대출
-//    상환
+public interface LoanAccount{
+
+    //대출
+    long withdraw();
+
+    //상환
+    long deposit();
+
+    //잔고 확인
+    void checkBalance();
 }

@@ -1,14 +1,19 @@
-public class InstallmentSavingsAccount extends Account{
+package bank;
 
-    //월 입금 날짜
-    //실입금액
-    float rateMonth; //월입금액
-    long endMoneyl //만기환급액
+public interface InstallmentSavingsAccount{
 
-    void compoundInterest() {
-//        월마다 복리 계산
-    }
 
-    //정해진 날짜에 입금되는지 확인하는 메서드
-    //월 입금액 맞는 지 확인하는 메서드
+
+    //입금
+    long deposit();
+
+    //이자붙음 : 월복리계산
+    long compoundInterest();
+
+    //만기 환급
+    long payback();
+
+
+    //정해진 날짜에 입금되는지 확인
+    //월 입금액 맞는 지 확인
 }
