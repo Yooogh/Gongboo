@@ -1,4 +1,4 @@
-package day0722.src.stream;
+package day0722.stream;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
