@@ -1,0 +1,41 @@
+Compiled from "Hello.java"
+public class day01.Hello {
+  public day01.Hello();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static int sum(int, int);
+    Code:
+       0: iload_0
+       1: iload_1
+       2: iadd
+       3: ireturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: iconst_1
+       1: istore_1
+       2: iload_1
+       3: bipush        10
+       5: invokestatic  #2                  // Method sum:(II)I
+       8: istore_2
+       9: bipush        63
+      11: istore_3
+      12: ldc           #3                  // String Hello
+      14: astore        4
+      16: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      19: iload_3
+      20: invokevirtual #5                  // Method java/io/PrintStream.println:(C)V
+      23: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      26: aload         4
+      28: invokevirtual #6                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      31: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      34: bipush        10
+      36: invokevirtual #7                  // Method java/io/PrintStream.println:(I)V
+      39: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      42: iload_2
+      43: invokevirtual #7                  // Method java/io/PrintStream.println:(I)V
+      46: return
+}
