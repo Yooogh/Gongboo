@@ -1,0 +1,37 @@
+HelloServlet 파일을 만든다 
+    호출 : hello.do  , hi.do  , xxx  .......
+WEB-INF/hello.jsp 호출
+    한글로 안녕하세요
+
+
+jsp -> servlet -> jsp
+
+servlet -> jsp -> servlet -> jsp 
+
+
+
+D:\works\2021-203-web\FirstWebApp\WebContent\abc.jsp
+호출 하려면
+http://localhost:8080/f1/abc.jsp
+
+D:\works\2021-203-web\FirstWebApp\WebContent\WEB-INF\def.jsp
+http://localhost:8080/f1/def.jsp  ==>  호출되지 않는다
+WEB-INF 밑에 있는 파일은 직접 호출되지 않는다
+
+
+
+//////////////////////////////////////////////
+
+ login.do ==> LoginServlet -->  doGet() ==> login.jsp 로 호출  WEB-INF/member/login.jsp
+    
+  login.jsp ==> ID, PW 확인 버튼클릭==>   loginPrc.do => LoginPrcServlet    --> doPost() ==> welcome.jsp
+
+
+
+
+
+
+
+
+
+

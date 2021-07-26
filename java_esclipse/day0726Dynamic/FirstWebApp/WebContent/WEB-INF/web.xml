@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>FirstWebApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>클래스 설명을 적는 자리</description>
+    <display-name>hhh</display-name>
+    <servlet-name>hhh</servlet-name>
+    <servlet-class>bit.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hhh</servlet-name>
+    <url-pattern>/hhh</url-pattern>
+    <url-pattern>/hi</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>hello jsp file</servlet-name>
+    <jsp-file>/WEB-INF/hello.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hello jsp file</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>def jsp file</servlet-name>
+    <jsp-file>/WEB-INF/def.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>def jsp file</servlet-name>
+    <url-pattern>/def</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>login jsp 호출한다</description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>bit.member.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>login 처리 클래스</description>
+    <display-name>LoginPrcServlet</display-name>
+    <servlet-name>LoginPrcServlet</servlet-name>
+    <servlet-class>bit.member.LoginPrcServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginPrcServlet</servlet-name>
+    <url-pattern>/loginPrc.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>fddsfdsfdsfdsfdsfds</description>
+    <display-name>LoginPrcServlet2</display-name>
+    <servlet-name>LoginPrcServlet2</servlet-name>
+    <servlet-class>bit.member.LoginPrcServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginPrcServlet2</servlet-name>
+    <url-pattern>/loginPrc2.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>login.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/member/login.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>login.jsp</servlet-name>
+  	<url-pattern>/login.jsp</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>
