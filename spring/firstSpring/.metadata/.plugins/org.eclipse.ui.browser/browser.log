@@ -1,0 +1,4 @@
+
+7월 27, 2021 16:08:59.29 NEW SESSION
+7월 27, 2021 16:08:59.29 [11628:12536:0727/160859.287:ERROR:usb_descriptors.cc(114)] Failed to parse configuration descriptor.
+7월 27, 2021 16:08:59.35 [11628:12536:0727/160859.359:ERROR:device_event_log_impl.cc(214)] [16:08:59.359] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
