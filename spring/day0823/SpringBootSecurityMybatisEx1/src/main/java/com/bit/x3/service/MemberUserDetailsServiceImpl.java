@@ -19,6 +19,7 @@ import com.bit.x3.model.vo.Member;
 public class MemberUserDetailsServiceImpl implements UserDetailsService {
 	@Autowired
 	private MemberDao memberDao;
+
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		// TODO Auto-generated method stub
