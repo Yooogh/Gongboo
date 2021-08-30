@@ -7,6 +7,9 @@ spring:
     url: jdbc:mysql://localhost:3306/example?serverTimezone=UTC&characterEncoding=UTF-8
     username: root
     password: 1234
+    data: classpath:sql/data.sql
+    initialization-mode: always
+    ini
   jpa:
     show-sql: true
     generate-ddl: false
