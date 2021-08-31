@@ -20,10 +20,13 @@ public class Member2 {
     private String name;
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "member_id")
-    private Collection<Phone> phones = new ArrayList<phones>();
+    @JoinColumn(name = "memberId")
+    private Collection<Phone> phones = new ArrayList<Phone>();
 
     public void addPhone(Phone phone) {
         phones.add(phone);
+    }
+
+    private class phone {
     }
 }
